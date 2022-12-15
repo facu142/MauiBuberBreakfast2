@@ -1,0 +1,17 @@
+﻿using MauiBuberBreakfast2.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace MauiBuberBreakfast2.Services
+{
+    public interface IBreakfastService
+    {
+        Task<List<BreakfastModel>> GetBreakfastList();
+        Task<int> AddBreakfast(BreakfastModel breakfastModel);
+        Task<int> DeleteBreakfast(BreakfastModel breakfastModel);
+        Task<int> UpdateBreakfast(BreakfastModel breakfastModel);
+    }
+}
